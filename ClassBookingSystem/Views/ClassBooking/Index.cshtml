@@ -1,0 +1,143 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<head>
+    <script src="~/Scripts/ClassProject.js"></script>
+    @Styles.Render("~/Content/classProjectDesign.css")
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <div class="timeLeft">
+        <h4>
+            <b>
+                Time Left:
+                <span id="count">
+                    <script>countdown();</script>
+                </span>
+            </b>
+        </h4>
+    </div>
+
+    <div class="cart">
+        <img src="~/Content/scart.jpg" width="50" height="60" alt="error" />
+    </div>
+
+    <div class="dot">
+        <p class="dotCount" id="counter">
+            <script>cartCount();</script>
+        </p>
+    </div>
+
+    <br />
+
+    <div class="claimClass"><b>Claim your free trial class</b></div>
+    <br />
+    <div class="classSchedule">Class Schedule</div>
+
+    <p class="freeSeats">
+        Free Seats Left:
+        <span id="seatsLeft">
+            <script>seats();</script>
+        </span>
+    </p>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Availabity</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>Mon May 1 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td1">
+            <script>numberOfSeats('td1');</script></td>
+            <td><button type="button" id="btn1" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td1');">Book Now</button></td>
+
+        </tr>
+
+        <tr>
+            <td>Mon May 2 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td2">
+            <script>numberOfSeats('td2');</script></td>
+            <td><button type="button" id="btn2" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td2');">Book Now</button></td>
+
+        </tr>
+
+        <tr>
+            <td>Wed May 3 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td3">
+            <script>numberOfSeats('td3');</script></td>
+            <td><button type="button" id="btn3" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td3');">Book Now</button></td>
+
+        </tr>
+
+        <tr>
+            <td>Thu May 4 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td4">
+            <script>numberOfSeats('td4');</script></td>
+            <td><button class="fullbtn" id="btn4" onclick="numberOfSeats('td4'); fullSeatAlert (id)">Full</button></td>
+
+        </tr>
+
+        <tr>
+            <td>Fri May 5 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td5">
+            <script>numberOfSeats('td5');</script></td>
+            <td><button class="fullbtn" id="btn5" onclick="numberOfSeats('td5'); fullSeatAlert (id)">Full</button></td>
+
+        </tr>
+        <tr>
+            <td>Sat May 6 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td6">
+            <script>numberOfSeats('td6');</script></td>
+            <td><button class="fullbtn" id="btn6" onclick="numberOfSeats('td6'); fullSeatAlert (id)">Full</button></td>
+
+        </tr>
+        <tr>
+            <td>Mon May 8 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td7">
+            <script>numberOfSeats('td7');</script></td>
+            <td><button type="button" id="btn7" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td7');">Book Now</button></td>
+
+        </tr>
+        <tr>
+            <td>Tue May 9 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td8">
+            <script>numberOfSeats('td8');</script></td>
+            <td><button type="button" id="btn8" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td8');">Book Now</button></td>
+
+        </tr>
+        <tr>
+            <td>Wed May 10 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td9">
+            <script>numberOfSeats('td9');</script></td>
+            <td><button type="button" id="btn9" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td9');">Book Now</button></td>
+
+        </tr>
+        <tr>
+            <td>Thu May 11 2021</td>
+            <td>01:00 PM IST - 02:00 PM IST</td>
+            <td id="td10">
+            <script>numberOfSeats('td10');</script></td>
+            <td><button type="button" id="btn10" onclick="freeSeatsCounter(id); cartCount(id); numberOfSeats('td10'); makeChange();">Book Now</button></td>
+
+        </tr>
+    </table>
+</body>
+
+
+

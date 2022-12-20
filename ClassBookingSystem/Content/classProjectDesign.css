@@ -1,0 +1,94 @@
+﻿
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: #191970;
+    color: white;
+}
+
+.freeSeats {
+    padding-left: 945px;
+    font-size: 20px;
+    display: flex;
+    margin-top: -45px;
+}
+
+.cart {
+    padding-left: 945px;
+    display: flex;
+    margin-top: -40px;
+    z-index: -1;
+    position: absolute;
+}
+
+.timeLeft {
+    padding-right: 900px;
+/*    display: inline-block;
+*/}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    margin-top: -35px;
+    margin-left: 978px;
+    padding-left: 8px;
+    padding-top: 2px;
+    color: white;
+}
+
+.dotCount {
+    color: white;
+    font-size: 16px;
+}
+
+button {
+    background-color: #FF7518;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    border: 1px black;
+    height: 35px;
+    width: 150px;
+    border-radius: 12px;
+}
+
+.fullbtn {
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    height: 35px;
+    width: 150px;
+    border-radius: 12px;
+}
+
+.claimClass {
+    color: orange;
+    font-size: 35px;
+}
+
+.classSchedule {
+    color: blue;
+    font-size: 30px;
+}
